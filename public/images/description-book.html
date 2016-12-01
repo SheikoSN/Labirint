@@ -1,0 +1,23 @@
+<div class="book-info col-sm-10">
+    <h1>{{bookInfo.book_name}}</h1>
+
+    <img ng-src="{{bookInfo.image}}" width="150"/>
+    <div class="book-description">
+        <p>Автор: <span ng-bind="bookInfo.author">{{bookInfo.author}}</span></p>
+        <p>Оригинальное название: <span>{{bookInfo.book_name}}</span></p>
+        <p>Язык оригинала:<span>{{bookInfo.language}}</span></p>
+        <p>Год: <span>{{bookInfo.year}}</span></p>
+        <p>Читать демо версию: <a ng-href="/#/read-demo">читать</a></p>
+        <p>Скачать: <a ng-href="{{bookInfo.loading}}">{{bookInfo.book_name}}</a></p>
+        <span class="describe">Описание:</span>
+        <p>{{bookInfo.description}}</p>
+    </div>
+
+</div>
+<div class="book-info col-sm-10">
+    <h1>Цитата:</h1>
+    <p>
+        {{bookInfo.quote}}
+    </p>
+
+</div>

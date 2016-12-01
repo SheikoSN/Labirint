@@ -1,0 +1,98 @@
+* {
+    margin:0;
+    padding:0
+}
+
+body {
+    padding:0 30px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+header a, header span{
+    font-size:30px;
+    float:right;
+    padding:12px;
+    color:black;
+    cursor:pointer;
+}
+
+header a:link {
+    text-decoration:none;
+    color:black
+}
+
+a {
+    color: #00B7FF;
+}
+
+table, th, td {
+    border: solid black 1px;
+}
+
+th {
+    padding: 8px 0;
+    text-align: center !important;
+}
+
+td {
+    padding: 10px 15px
+}
+
+.book-list th,.book-list td{
+    padding:8px!important
+}
+
+.book-list, .book-info{
+    margin-left: 8%
+}
+
+.book-info h1 {
+    font-family: georgia, serif;
+    color: #000;
+    font-weight: normal;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.book-info img {
+    float: left;
+}
+
+.book-description {
+    margin-left: 180px;
+    font-weight: bold;
+}
+
+.book-description p {
+    padding: 5px;
+    border-bottom: 1px solid #a6a6a6;
+}
+
+.book-description span, .book-description p:last-of-type {
+    font-weight: normal;
+}
+
+.default-error-message{
+    display:none;
+}
+
+.error-message {
+    display:block;
+    float: none;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #e07777;
+    border-radius: 4px;
+    width: 31.33333333%;
+    margin-left: 34.33333333%;
+}
+
+.description {
+    cursor:pointer
+}
+.book-description span.describe{
+    font-weight: bold!important;
+}
+.button-new-book{
+    margin-top:20px
+}

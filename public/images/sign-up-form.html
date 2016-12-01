@@ -1,0 +1,69 @@
+
+<form  ng-submit="signUp()" class="form-horizontal">
+    <fieldset>
+
+        <!-- Form Name -->
+        <legend>Регистрация</legend>
+
+        <!-- Text input-->
+        <div class="form-group">
+            <label class="col-sm-4 control-label" for="fn">Имя</label>
+            <div class="col-sm-4">
+                <input id="fn" name="fn" type="text" placeholder="first name" class="form-control input-md" ng-model="userData.name" >
+
+            </div>
+        </div>
+
+        <!-- Text input-->
+        <div class="form-group">
+            <label class="col-sm-4 control-label" for="ln">Фамилия</label>
+            <div class="col-sm-4">
+                <input id="ln" name="ln" type="text" placeholder="last name" class="form-control input-md" ng-model="userData.surname" >
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-4 control-label" for="ln">Логин</label>
+            <div class="col-sm-4">
+                <input  name="ln" type="text" placeholder="login" id='login' class="form-control input-md" ng-model="userData.login" >
+
+            </div>
+        </div>
+        <!-- Text input-->
+        <div class="form-group">
+            <label class="col-sm-4 control-label">Пароль</label>
+            <div class="col-sm-4">
+                <input  name="passwordf" id="pass" type="password" placeholder="password" class="form-control input-md" ng-model="userData.password" >
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-4 control-label" >Повторите пароль</label>
+            <div class="col-sm-4">
+                <input name="password2" id="pass2" type="password" placeholder="password" class="form-control input-md"  ng-model="repeatPassword">
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-4 control-label" >Email</label>
+            <div class="col-sm-4">
+                <input  name="email" type="text" placeholder="email" class="form-control input-md" ng-model="userData.email" >
+
+            </div>
+        </div>
+        <div ng-class="{'error-message': falseValidation, 'default-error-message': trueValidation}" ng-model="errorMessage">{{errorMessage}}</div>
+
+
+        <div class="form-group">
+            <label class="col-sm-4 control-label" for="submit"></label>
+            <div class="col-sm-4">
+                <button ng-click="validation()" id="submit" name="submit" class="btn btn-primary" >ОТПРАВИТЬ</button>
+            </div>
+        </div>
+
+    </fieldset>
+</form>
+

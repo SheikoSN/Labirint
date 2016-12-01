@@ -1,0 +1,19 @@
+<table class="col-sm-10 book-list" ng-init="getBooks()">
+    <thead>
+    <tr>
+        <th>Автор</th>
+        <th>Произведение</th>
+        <th>Год</th>
+        <th>Описание</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="book in books">
+        <td>{{book.doc.author}}</td>
+        <td>{{book.doc.book_name}}</td>
+        <td>{{book.doc.year}}</td>
+        <td><a class="description" ng-click="descriptionBook(book.doc._id)">подробнее</a></td>
+    </tr>
+    </tbody>
+</table>
+

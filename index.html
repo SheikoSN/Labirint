@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+    <link rel="stylesheet" href="public/stylesheets/style.css">
+    <link rel="stylesheet" href="public/stylesheets/bootstrap.min.css">
+    <script src='node_modules/angular/angular.js'></script>
+    <script src='node_modules/angular-route/angular-route.min.js'></script>
+    <script src="public/javascripts/app.js"></script>
+    <script src="public/javascripts/login.js"></script>
+    <script src='public/javascripts/route.js'></script>
+    <script src="public/javascripts/sign-up.js"></script>
+    <script src="public/services/appService.js"></script>
+
+
+</head>
+<body ng-app="myApp">
+<header style="height:60px; border-radius:4px; margin-bottom: 120px; background-color: #6eb36e">
+    <a  ng-show="login"  href="/#/sign-up" class="glyphicon  glyphicon-registration-mark" aria-hidden="true"></a>
+    <a class="glyphicon glyphicon-plus" ng-href="/#/new-book';" ng-show="newBook" ng-click="createBook()"></a>
+</header>
+
+<ng-view></ng-view>
+
+
+</body>
+</html>

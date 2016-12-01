@@ -1,0 +1,33 @@
+<form ng-submit="loginning()" class="form-horizontal">
+    <fieldset>
+        <legend>Вход</legend>
+
+        <div class="form-group">
+            <label class="col-sm-4 control-label">Логин</label>
+            <div class="col-sm-4">
+                <input name="ln" id='login' type="text" placeholder="login" class="form-control input-md" ng-model="enterUser.log">
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-4 control-label">Пароль</label>
+            <div class="col-sm-4">
+                <input name="password" id="pass" type="password" placeholder="password" class="form-control input-md" ng-model="enterUser.pass" >
+
+            </div>
+        </div>
+
+        <div ng-class="{'error-message': falseValidation, 'default-error-message': trueValidation}" ng-model="errorMessage">{{errorMessage}}</div>
+
+        <div class="form-group">
+            <label class="col-sm-4 control-label" for="submit"></label>
+            <div class="col-sm-4">
+                <button ng-click="validationLogin()" id="submit" name="submit"  class="btn btn-primary">ОТПРАВИТЬ</button>
+            </div>
+        </div>
+
+    </fieldset>
+</form>
+
+
